@@ -1,0 +1,431 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="space::COL2DOBJ" Collapsed="true">
+    <Position X="5.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAQgA=</HashCode>
+      <FileName>collision.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="space::Dot2_COL2D" Collapsed="true">
+    <Position X="7.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAEAAAAAIAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
+      <FileName>collision.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="space::Line2_COL2D" Collapsed="true">
+    <Position X="3" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAECAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAIAAAAAAAA=</HashCode>
+      <FileName>collision.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="space::Triangle2_COL2D" Collapsed="true">
+    <Position X="0.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAIAAAAAAAQAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>collision.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="space::Circle2_COL2D" Collapsed="true">
+    <Position X="9.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAgAAAAAAAACAAAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>collision.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="space::CollisionDetective2D" Collapsed="true">
+    <Position X="5.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAEBA=</HashCode>
+      <FileName>collision.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="space::DrawAndUpdate" Collapsed="true">
+    <Position X="11.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAIIAAAAAAAAAAAAACAAAAAAEAAA=</HashCode>
+      <FileName>common.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="space::FPScontrol" Collapsed="true">
+    <Position X="26" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAQMQAAACAAAAAUAoAAgACAAIAAAAAAAAAAEQAAA=</HashCode>
+      <FileName>common.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="space::GameMain" Collapsed="true">
+    <Position X="15" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAgAAACBAoAIAAIYBAAAACQAIAAARiAQABQAEAQA=</HashCode>
+      <FileName>gamemain.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="space::Object" Collapsed="true">
+    <Position X="7.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AMQBgISAAQAAAJCgIIAAgAIAAAAhBAAIiABBAIEBAgE=</HashCode>
+      <FileName>gamemainobject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="space::People" Collapsed="true">
+    <Position X="1" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAgAAABIAAAACAAAAAAAIAAAABAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>gamemainobject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="space::PawnPeople" Collapsed="true">
+    <Position X="1" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAKAAAAAAAAgA=</HashCode>
+      <FileName>gamemainobject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="space::Bullet" Collapsed="true">
+    <Position X="12.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAIAAAABAAAEAAAAAAAQAAA=</HashCode>
+      <FileName>gamemainobject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="space::NormalBullet" Collapsed="true">
+    <Position X="12.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAACAAAAAAAAAAEAABAAACAAAAAAAAgI=</HashCode>
+      <FileName>gamemainobject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="space::Building" Collapsed="true">
+    <Position X="4.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgBAQAAAAAACAAAAAAAIAAAABAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>gamemainobject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="space::NormalBuilding" Collapsed="true">
+    <Position X="3.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAgA=</HashCode>
+      <FileName>gamemainobject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="space::Importance" Collapsed="true">
+    <Position X="14.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>gamemainobject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="space::PlayerBase" Collapsed="true">
+    <Position X="14.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAACAAAAAAAIQAAABBAAACAAAAAAAAgA=</HashCode>
+      <FileName>gamemainobject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="space::Field" Collapsed="true">
+    <Position X="9" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACgAA=</HashCode>
+      <FileName>gamemainobject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="space::FieldAbsolutewall" Collapsed="true">
+    <Position X="7.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAACAAQAQAAAAAIAAAIBBAAACIAAAAAAAgA=</HashCode>
+      <FileName>gamemainobject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="space::GameNetwork" Collapsed="true">
+    <Position X="17.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIgAgAAAAAAAAAAIIiAAAAgAQBABAQIAAAABwGEAA=</HashCode>
+      <FileName>gamenetwork.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="space::SDLSURFACE" Collapsed="true">
+    <Position X="26" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAABAGAACAAgAAAAQAAAAAAAAAAAACAAACAAAAAAI=</HashCode>
+      <FileName>graphic.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="space::GLTEXTURE" Collapsed="true">
+    <Position X="29.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BQCAAAAAAAAAAAQAQAIAgAAAQAAAAREAAIxAAAYQBIA=</HashCode>
+      <FileName>graphic.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="space::GLFILETEXS" Collapsed="true">
+    <Position X="27.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAEAAAAAAAQAAAAAAQAAYAAAAAAAAAAAA=</HashCode>
+      <FileName>graphic.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="space::SDLFILESRFS" Collapsed="true">
+    <Position X="31.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAACAAAAAAAAABAAAAQAAAAAAAAAYAAAAAAAAAAAA=</HashCode>
+      <FileName>graphic.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="space::BMPFONT" Collapsed="true">
+    <Position X="24.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAgABBAAAAACAAACIAAAAAAIAAAAABAAAAAAAIQAA=</HashCode>
+      <FileName>graphic.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="space::Keyboard" Collapsed="true">
+    <Position X="24.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gEgIAAAAAAAIAAACAEAAAAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>input.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="space::Joystick" Collapsed="true">
+    <Position X="31.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAQBAAAAAABYAIkAAAAAAAAQAAAAAYAFgAQAAAAA=</HashCode>
+      <FileName>input.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="space::Mouse" Collapsed="true">
+    <Position X="26" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AMAAAAAAAAAAAIAAyAAIAAgACAAIARAQABAAAAAAgAA=</HashCode>
+      <FileName>input.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="space::RawData" Collapsed="true">
+    <Position X="29.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAKAAAEAAAAEKAAAABAAAAAQAkAAQAAAABAAAA=</HashCode>
+      <FileName>network.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="space::ProgramSystemMain" Collapsed="true">
+    <Position X="1.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAABAIAAAIAABAAAAYMIAQQAAAIMABAACIQBAgRkKAA=</HashCode>
+      <FileName>programsystemmain.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="space::SDLMIXERCHUNK" Collapsed="true">
+    <Position X="24.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAggAoAIBEIAAAAAAAAAAAAACgAAAAAEAAAAAAIAE=</HashCode>
+      <FileName>sound.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="space::SystemState" Collapsed="true">
+    <Position X="12.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAIAACAIAAAAgAACAAAAEAAAAAAAAAAAE=</HashCode>
+      <FileName>systemstate.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="space::GameSetting" Collapsed="true">
+    <Position X="12.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAUoABgAAAIAgAAAAIJAAAAAAAQBIJgEIAAgAAAUQoA=</HashCode>
+      <FileName>gamesetting.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="space::StateFadeOut" Collapsed="true">
+    <Position X="6" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAIACAAAgAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>effectstate.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="space::StateFadeIn" Collapsed="true">
+    <Position X="10.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAIAAAAAAAABCAAAAAAAAAAEAAA=</HashCode>
+      <FileName>effectstate.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="space::Title" Collapsed="true">
+    <Position X="3.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAgEAAAAJAAAAAAAABIBAAAAAAAAAEAAA=</HashCode>
+      <FileName>title.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="space::Result" Collapsed="true">
+    <Position X="8.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAgAAAAAJAAAQAAAAAIBABAAAABBAEAQA=</HashCode>
+      <FileName>result.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="space::ObjectSortFuncByPos" Collapsed="true">
+    <Position X="27.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>gamemainobject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="space::Fortress" Collapsed="true">
+    <Position X="5.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAAAICAAAAAAAAgA=</HashCode>
+      <FileName>gamemainobject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="space::FieldVolcano" Collapsed="true">
+    <Position X="10" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIgAAAAAAAAAAAAAAAAAIAAAABBAAACAAAAAAAAgA=</HashCode>
+      <FileName>gamemainobject.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="space::FieldSetting" Collapsed="true">
+    <Position X="19.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAACAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>fieldsetting.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="space::BaseSetting" Collapsed="true">
+    <Position X="21.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAIAAAAAAAAAAAAQAAAAAAAEAAA=</HashCode>
+      <FileName>basesetting.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="space::Input" Collapsed="true">
+    <Position X="29.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAIAAEAAAAAAAAAAEAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>input.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="space::Matrix31&lt;T&gt;" Collapsed="true">
+    <Position X="27.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAA4AUAAQAIAAAAAAAAAABgAwAAAgA=</HashCode>
+      <FileName>matrixobj.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="space::Matrix21&lt;T&gt;" Collapsed="true">
+    <Position X="26" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>GgAAAAAACAgAABAA4AUAAUAIAAABAAAAAABgAgAAAoA=</HashCode>
+      <FileName>matrixobj.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="space::Line2&lt;T&gt;" Collapsed="true">
+    <Position X="31.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAADAAAAAAAAEAAAUEAAAEBAAAAgAAAQADAAgA=</HashCode>
+      <FileName>matrixobj.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="space::Triangle2&lt;T&gt;" Collapsed="true">
+    <Position X="24.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAACAAAAAABAAAAAUAAAAEBAAAAgAAAAAAAAgA=</HashCode>
+      <FileName>matrixobj.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="space::Circle2&lt;T&gt;" Collapsed="true">
+    <Position X="24.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAACAAAAAAAAAAAAUAAAAABAAAEAEAAAAAAAAA=</HashCode>
+      <FileName>matrixobj.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="space::mesh::ColorRGB" Collapsed="true">
+    <Position X="26" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>mesh.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="space::mesh::IndexColor" Collapsed="true">
+    <Position X="27.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>mesh.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="space::mesh::TextureFileName" Collapsed="true">
+    <Position X="31.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>mesh.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="space::mesh::MeshFace" Collapsed="true">
+    <Position X="31.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>mesh.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="space::mesh::MeshNormals" Collapsed="true">
+    <Position X="26" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>mesh.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="space::mesh::Material" Collapsed="true">
+    <Position X="24.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAABAACAAAAAAAAAAAAAIEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>mesh.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="space::mesh::MeshTextureCoords" Collapsed="true">
+    <Position X="27.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>mesh.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="space::mesh::MeshMaterialList" Collapsed="true">
+    <Position X="24.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAABAAAA=</HashCode>
+      <FileName>mesh.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="space::mesh::MeshVertexColors" Collapsed="true">
+    <Position X="29.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>mesh.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="space::mesh::Mesh" Collapsed="true">
+    <Position X="29.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAAAgAAAAAABAAAAAAAAAAAAAQAgAAAQAAAABAAAA=</HashCode>
+      <FileName>mesh.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="space::WinRect" Collapsed="true">
+    <Position X="26" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAgAAAAAAAAAAAAAAABCAQAhgAAAAAAA=</HashCode>
+      <FileName>systemstate.h</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Typedef Name="space::IDCOL2D" Collapsed="true">
+    <Position X="24.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>collision.h</FileName>
+    </TypeIdentifier>
+  </Typedef>
+  <Font Name="MS UI Gothic" Size="9" />
+</ClassDiagram>
