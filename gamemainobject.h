@@ -121,36 +121,36 @@ namespace space
 		//コンストラクタ
 		Object();
 		Object(GameMain *p, CLASSID _id = NONE);
-		inline virtual ~Object() { formorton.Remove(); }
+		virtual ~Object() { formorton.Remove(); }
 
 		//ID_get
-		inline Object::CLASSID Object::get_class_id(){ return class_id; }
-		inline Object::ID Object::get_object_id(){ return object_id; }
-		inline Object::PLAYERID Object::get_player_id(){ return player_id; }
+		inline Object::CLASSID get_class_id(){ return class_id; }
+		inline Object::ID get_object_id(){ return object_id; }
+		inline Object::PLAYERID get_player_id(){ return player_id; }
 		//攻撃する
-		inline virtual void attackTo(Object* src);
+		virtual void attackTo(Object* src);
 
 		//デフォルトは用意するけど確実に実装してください。
-		inline virtual void draw2D(){}
-		inline virtual void draw3D(){}
+		virtual void draw2D(){}
+		virtual void draw3D(){}
 
 		//手動で動かす時に使います。というか最終的には何時もこれで動かすように。
 		virtual void move_manual();
-		inline virtual void move(){animecount++;move_manual();}
+		virtual void move(){animecount++;move_manual();}
 
 		//当たり判定
-		inline virtual void collision(Object* obj){}
-		inline virtual void collision(std::list<Object*> &list){
+		virtual void collision(Object* obj){}
+		virtual void collision(std::list<Object*> &list){
 			std::list<Object*>::iterator it = list.begin();
 			for(;it!=list.end();it++){if(*it!=this){collision(*it);}}
 		}
 
 		//参照関係の解消に使えたりします。
 		//まあ使いたければ使うでいいんじゃないでしょうか。
-		inline virtual void after_collision(){}
+		virtual void after_collision(){}
 
 		//パラメータのセット(実体を作るクラス全てで宣言すること)
-		inline virtual void setParam() = 0;
+		virtual void setParam() = 0;
 
 		//実行順序
 		//move -> collision -> after_collision -> draw2D,draw3D
@@ -185,7 +185,7 @@ namespace space
 		virtual ~People(){}
 		
 		//衝突判定
-		inline virtual void collision(Object* obj);
+		virtual void collision(Object* obj);
 		virtual void after_collision(){ if(hp<=0){ isNeed=false; hp=0; } }
 		//動
 		virtual void move(void){Object::move();}
@@ -239,10 +239,10 @@ namespace space
 	public:
 		Bullet(){}
 		Bullet(GameMain* p,ID _oid = BULLET_NULL);
-		inline virtual ~Bullet();
+		virtual ~Bullet();
 
-		inline virtual void collision(Object* op);
-		inline virtual void after_collision();
+		virtual void collision(Object* op);
+		virtual void after_collision();
 	};
 
 	//普通の弾
@@ -256,12 +256,12 @@ namespace space
 		NormalBullet();
 		NormalBullet(GameMain* p,PLAYERID _pid,double _x,double _y,double vx,double vy);
 
-		inline virtual void draw2D(void);
-		inline virtual void move(void);
-		inline virtual void after_collision(void);
+		virtual void draw2D(void);
+		virtual void move(void);
+		virtual void after_collision(void);
 
 		//パラメータセット
-		inline virtual void setParam(void);
+		virtual void setParam(void);
 	};
 
 	//爆風
@@ -274,12 +274,12 @@ namespace space
 		BombFire();
 		BombFire(GameMain* p,PLAYERID _pid,double _x,double _y,double _d,unsigned int frame);
 
-		inline virtual void draw2D(void);
-		inline virtual void move(void);
-		inline virtual void after_collision(void);
+		virtual void draw2D(void);
+		virtual void move(void);
+		virtual void after_collision(void);
 
 		//パラメータセット
-		inline virtual void setParam(void);
+		virtual void setParam(void);
 	};
 
 	//メテオ
@@ -295,13 +295,13 @@ namespace space
 		Meteo();
 		Meteo(GameMain* p,PLAYERID _pid,double _x,double _y,double dx,double dy);
 
-		inline virtual void draw2D(void);
-		inline virtual void move(void);
+		virtual void draw2D(void);
+		virtual void move(void);
 		
-		inline virtual void after_collision(void);
+		virtual void after_collision(void);
 
 		//パラメータセット
-		inline virtual void setParam(void);
+		virtual void setParam(void);
 	};
 
 	//爆弾
@@ -310,13 +310,13 @@ namespace space
 	public:
 		Bomb();
 		Bomb(GameMain* p,PLAYERID _pid,double _x,double _y);
-		inline virtual void draw2D(void);
+		virtual void draw2D(void);
 
-		inline virtual void after_collision();
+		virtual void after_collision();
 
 
 		//パラメータセット
-		inline virtual void setParam();
+		virtual void setParam();
 	};
 
 	//地雷
@@ -325,12 +325,12 @@ namespace space
 	public:
 		GroundBomb();
 		GroundBomb(GameMain* p,PLAYERID _pid,double _x,double _y);
-		inline virtual void draw2D(void);
+		virtual void draw2D(void);
 
-		inline virtual void after_collision();
+		virtual void after_collision();
 
 		//パラメータセット
-		inline virtual void setParam();
+		virtual void setParam();
 	};
 
 
@@ -347,8 +347,8 @@ namespace space
 		Building(GameMain* p,ID _oid = BUILDING_NULL);
 		virtual ~Building(){}
 
-		inline virtual void collision(Object* op);
-		inline virtual void after_collision();
+		virtual void collision(Object* op);
+		virtual void after_collision();
 
 	};
 
@@ -358,10 +358,10 @@ namespace space
 	public:
 		NormalBuilding();
 		NormalBuilding(GameMain* p,PLAYERID _pid,double _x,double _y);
-		inline virtual void draw2D(void);
-		inline virtual void move(void);
+		virtual void draw2D(void);
+		virtual void move(void);
 		//パラメータセット
-		inline virtual void setParam();
+		virtual void setParam();
 	};
 
 	//要塞
@@ -370,10 +370,10 @@ namespace space
 	public:
 		Fortress();
 		Fortress(GameMain* p,PLAYERID _pid,double _x,double _y);
-		inline virtual void draw2D(void);
-		inline virtual void move(void);
+		virtual void draw2D(void);
+		virtual void move(void);
 		//パラメータセット
-		inline virtual void setParam();
+		virtual void setParam();
 	};
 
 	//店
@@ -382,10 +382,10 @@ namespace space
 	public:
 		Shop();
 		Shop(GameMain* p,PLAYERID _pid,double _x,double _y);
-		inline virtual void draw2D(void);
-		inline virtual void move(void);
+		virtual void draw2D(void);
+		virtual void move(void);
 		//パラメータセット
-		inline virtual void setParam();
+		virtual void setParam();
 	};
 
 	//鍛冶屋
@@ -394,10 +394,10 @@ namespace space
 	public:
 		Smith();
 		Smith(GameMain* p,PLAYERID _pid,double _x,double _y);
-		inline virtual void draw2D(void);
-		inline virtual void move(void);
+		virtual void draw2D(void);
+		virtual void move(void);
 		//パラメータセット
-		inline virtual void setParam();
+		virtual void setParam();
 	};
 
 	//=============================
@@ -423,11 +423,11 @@ namespace space
 		PlayerBase();
 		PlayerBase(GameMain* p,PLAYERID _pid,double _x,double _y);
 
-		inline virtual void draw2D(void);
+		virtual void draw2D(void);
 
-		inline virtual void move(void);
-		inline virtual void collision(Object* op);
-		inline virtual void after_collision();
+		virtual void move(void);
+		virtual void collision(Object* op);
+		virtual void after_collision();
 
 		//パラメータセット
 		void setParam();
@@ -460,10 +460,10 @@ namespace space
 	public:
 		FieldVolcano();
 		FieldVolcano(GameMain* p,double _x,double _y);
-		inline virtual void draw2D(void);
-		inline virtual void move(void);
+		virtual void draw2D(void);
+		virtual void move(void);
 
-		inline virtual void collision(Object* op);
+		virtual void collision(Object* op);
 		virtual void after_collision(){
 			if(hp<=0){hp=0;}
 		}
@@ -480,11 +480,11 @@ namespace space
 	public:
 		FieldRock();
 		FieldRock(GameMain* p,double _x,double _y);
-		inline virtual void draw2D(void);
+		virtual void draw2D(void);
 
 
 		//パラメータセット
-		inline virtual void setParam();
+		virtual void setParam();
 	};
 
 	
@@ -494,10 +494,10 @@ namespace space
 	public:
 		FieldTree();
 		FieldTree(GameMain* p,double _x,double _y);
-		inline virtual void draw2D(void);
+		virtual void draw2D(void);
 
 		//パラメータセット
-		inline virtual void setParam();
+		virtual void setParam();
 	};
 
 	//さぼてん
@@ -506,10 +506,10 @@ namespace space
 	public:
 		FieldSaboten();
 		FieldSaboten(GameMain* p,double _x,double _y);
-		inline virtual void draw2D(void);
+		virtual void draw2D(void);
 
 		//パラメータセット
-		inline virtual void setParam();
+		virtual void setParam();
 	};
 
 
@@ -520,7 +520,7 @@ namespace space
 	{
 	public:
 		Effect(){}
-		Effect::Effect(GameMain* p,ID _oid) : Object(p,EFFECT){ object_id = _oid; player_id = PLAYER_NULL; }
+		Effect(GameMain* p,ID _oid) : Object(p,EFFECT){ object_id = _oid; player_id = PLAYER_NULL; }
 		virtual ~Effect(){}
 		virtual void move_manual(){Object::move_manual();formorton.Remove();}
 	};
@@ -532,11 +532,11 @@ namespace space
 		ExplosionEffect();
 		ExplosionEffect(GameMain* p,double _x,double _y);
 
-		inline virtual void draw2D(void);
-		inline virtual void move(void);
+		virtual void draw2D(void);
+		virtual void move(void);
 
 		//パラメータセット
-		inline virtual void setParam();
+		virtual void setParam();
 	};
 
 	//落下店表示エフェクト
@@ -546,10 +546,10 @@ namespace space
 		MeteoPointEffect();
 		MeteoPointEffect(GameMain* p,double _x,double _y);
 
-		inline virtual void draw2D(void);
+		virtual void draw2D(void);
 
 		//パラメータセット
-		inline virtual void setParam();
+		virtual void setParam();
 	};
 
 	//ワーニングエフェクト
@@ -561,11 +561,11 @@ namespace space
 		WarningEffect();
 		WarningEffect(GameMain* p,int cnt);
 
-		inline virtual void draw2D(void);
-		inline virtual void move(void);
+		virtual void draw2D(void);
+		virtual void move(void);
 
 		//パラメータセット
-		inline virtual void setParam();
+		virtual void setParam();
 	};
 }
 

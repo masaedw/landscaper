@@ -8,6 +8,7 @@
 #pragma comment(lib,"opengl32.lib")
 
 #include <SDL/SDL.h>
+#include <SDL/SDL_opengl.h>
 #include <SDL/SDL_thread.h>
 #include <SDL/SDL_image.h>
 #include <SDL/SDL_opengl.h>

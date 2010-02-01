@@ -242,6 +242,7 @@ namespace space
 	{
 	}
 
+/*
 	void GameMain::setting3D()
 	{
 		glMatrixMode(GL_PROJECTION);
@@ -252,6 +253,7 @@ namespace space
 		glLoadIdentity();
 		glViewport(410,250,200,200);
 	}
+*/
 
 	void GameMain::update()
 	{
@@ -750,7 +752,7 @@ namespace space
 		}
 		//とりあえずオブジェクト数の表示
 		{
-			sprintf(_str,"objects = %d",objects.size());
+			sprintf(_str,"objects = %lu",objects.size());
 			SDL_Rect _rect= {
 				data_rect.x+8,
 				data_rect.y+data_rect.h-40,

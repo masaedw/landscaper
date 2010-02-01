@@ -80,7 +80,7 @@ namespace space{
 		void after_all();
 		
 		//“ü—ÍŽžŠÔ‚Ì‚±‚Æ
-		void GameNetwork::setpushtime(unsigned short num);
+		void setpushtime(unsigned short num);
 		
 		//ƒRƒ}ƒ“ƒhŽó‚¯Žæ‚è
 		bool recvCommandC(unsigned int i,unsigned short pnum,unsigned int size);

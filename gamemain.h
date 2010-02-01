@@ -174,7 +174,7 @@ namespace space
 		GameMain(const GameMain &temp);
 		~GameMain();
 
-		void setting3D();
+		/* void setting3D(); */
 
 		void update();
 		void draw();

@@ -449,7 +449,7 @@ template<class T> Triangle2<T>::Triangle2(){}
 template<class T> Triangle2<T>::Triangle2(const Triangle2<T> &_t){ p1 = _t.p1; p2 = _t.p2; p3 = _t.p3; }
 template<class T> Triangle2<T>::Triangle2(const Line2<T> &_l1, const Line2<T> &_l2, const Line2<T> &_l3)
 {
-	p1=_l1.p1; p2=_l2.p1; l3=_l3.p1; 
+	p1=_l1.p1; p2=_l2.p1; p3=_l3.p1;
 }
 template<class T> Triangle2<T>::Triangle2(const Matrix21<T> &_p1, const Matrix21<T> &_p2, const Matrix21<T> &_p3)
 {

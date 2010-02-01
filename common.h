@@ -19,8 +19,6 @@
 #include<time.h>
 #include<math.h>
 
-#include <GL/glut.h>
-
 #include "setsdl.h"
 #include "graphic.h"
 
